@@ -26,7 +26,7 @@ fs.readdir("./commands/", (error, files) => {
         if(!f.endsWith(".js")) return;
         let props = require(`./commands/${f}`); // require the file
         client.commands.set(props.help.name, props); // set the properties
-        props.aliases.forEach(alias => client.aliases.set(alias, props.help.name)); // set the aliases
+        props.help.aliases.forEach(alias => client.aliases.set(alias, props.help.name)); // set the aliases
         console.log(`Loaded ${props.help.name} (${f})`);
     });
 });
