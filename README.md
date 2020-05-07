@@ -6,7 +6,7 @@ description: About this Page!
 
 ## What is here?
 
-Some tutorials to make programming easy for developers!
+Some tutorials and documentations to make programming easy for developers!
 
 
 
